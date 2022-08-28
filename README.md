@@ -24,8 +24,10 @@ Esta é a ferramenta utilizada para realização dos envios de SMS através de u
 As seguintes ferramentas foram utilizadas para construção desta aplicação:
 
 - Node.js ([nodejs.org](http://nodejs.org/))
-- Express ([expressjs.com](http://expressjs.com/))
+- Axios ([axios-http.com](https://axios-http.com/))
 - Nodemon ([nodemon.io](https://nodemon.io/))
+- Express ([expressjs.com](http://expressjs.com/))
+- DotEnv ([GitHub DotEnv](https://github.com/motdotla/dotenv))
 - API Zenvia - Totalvoice ([GitHub Totalvoice](https://github.com/totalvoice/totalvoice-node))
 
 <br>
@@ -48,6 +50,10 @@ $ git clone https://github.com/leodoima/sms-app.git
 # Ir para pasta raiz do projeto
 $ cd sms-app
 
+# Configurar variáveis de ambiente 
+Renomear arquivo .env.example para .env
+Alterar o conteúdo das chaves para aqueles desejados
+
 # Rodar a aplicação
 $ npm start
 
@@ -58,7 +64,18 @@ $ http://localhost:3333/
 
 <br>
 <br>
+
+**Enviar SMS**
+```json
+{
+    "recipientTelephone": "9999999999999" 
+    // Número deve conter: código do país + código de área + telefone
+}
+```
+
 <br>
+<br>
+
 
 ### Melhorias futuras 🔨
 
