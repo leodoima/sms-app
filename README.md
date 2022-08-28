@@ -66,12 +66,17 @@ $ http://localhost:3333/
 <br>
 
 **Enviar SMS**
+
+Realizar POST através da rota http://localhost:3333/send com o conteúdo abaixo:
+
 ```json
 {
-    "recipientTelephone": "9999999999999" 
-    // Número deve conter: código do país + código de área + telefone
+    "recipientTelephone": "9999999999999"
 }
 ```
+
+Telefone deverá conter código do país + código de área + número do telefone. 
+
 
 <br>
 <br>
